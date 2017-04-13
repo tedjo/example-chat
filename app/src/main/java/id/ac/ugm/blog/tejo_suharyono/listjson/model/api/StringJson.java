@@ -17,5 +17,5 @@ public class StringJson implements JsonDeserializer<String> {
     public String deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
         return json.toString();
     }
-    // untuk clas stringjson ini sendiri saya kurang tau karena saya baru mempelajari parsing data dengan model MVC yg belum pernah saya pelajari.
+
 }

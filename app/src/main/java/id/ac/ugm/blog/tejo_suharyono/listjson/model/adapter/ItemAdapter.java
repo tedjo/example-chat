@@ -27,13 +27,13 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.viewItemRow>  
         mItemDataModels = itemDataModels;
     }
 
-    // proses metod untuk mengambil data dari itemdata
+
     public void addItemAdapter(ItemDataModel itemdata) {
         mItemDataModels.add(itemdata);
         notifyDataSetChanged();
     }
 
-    // metod untuk mengconvet tampilan di layot item row ke dalam tampilan view
+
     @Override
     public viewItemRow onCreateViewHolder(ViewGroup parent, int viewType) {
         View row = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_row, parent, false);
@@ -52,7 +52,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.viewItemRow>  
         view.time.setText(currentItemDataModel.time);
     }
 
-    public class viewItemRow extends RecyclerView.ViewHolder { // perintah untuk mengirimkan datanya ke tampilan view
+    public class viewItemRow extends RecyclerView.ViewHolder {
 
         public TextView message, sender, is_from_me, time;
 

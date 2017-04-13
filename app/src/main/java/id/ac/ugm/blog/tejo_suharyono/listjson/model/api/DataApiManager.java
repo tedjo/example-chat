@@ -12,7 +12,7 @@ import retrofit.converter.GsonConverter;
 public class DataApiManager {
     private UrlApi mUrlApi;
 
-    // di sini menggukanan libary gson sendiri untuk mengambil data dari model json itu di dalam url link yg di simpan di class helperUrl
+
     public UrlApi getDataApi() {
 
         if(mUrlApi == null) {

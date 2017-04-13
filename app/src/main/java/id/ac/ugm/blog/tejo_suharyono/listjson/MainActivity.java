@@ -55,6 +55,6 @@ public class MainActivity extends AppCompatActivity implements Controller.CallLi
 
     @Override
     public void onFetchProgress(ItemDataModel itemDataModel) {
-        mItemAdapter.addItemAdapter(itemDataModel); // fungsi ini untuk menambahkan yg diambil dalam clas itemadapter
+        mItemAdapter.addItemAdapter(itemDataModel);
     }
 }
